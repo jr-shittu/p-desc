@@ -1,0 +1,59 @@
+body{
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 3em;
+}
+
+.grid{
+    position: inherit;
+    grid-template-columns: 1fr 1fr;
+    width: 1200px;
+    margin: 200px auto 0;
+}
+
+.lt{
+    float: left;
+    height: 600px;
+    width: 50%;
+    grid-row: 1;
+}
+
+.rt{
+    float: right;
+    height: 600px;
+    width: 50%;
+    grid-row: 1;
+}
+
+.evolve{
+    transition: all .7s ease-in-out;
+}
+
+.text{
+    position: absolute;
+    z-index: 200;
+    width: 50%;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.hidden{
+    opacity: 0;
+}
+
+#main,
+#ltText,
+#rtText{
+    transition: all .7s ease-in-out;
+}
+
+.nowEvolve{
+    transform: scale(1.3);
+}
